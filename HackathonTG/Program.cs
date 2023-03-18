@@ -1,3 +1,4 @@
+using HackathonTG.OpenGovernmentData.Core.Parsers;
 using pebe.Dashboard;
 
 namespace HackathonTG
@@ -6,8 +7,11 @@ namespace HackathonTG
 	{
 		public static async Task Main(string[] args)
 		{
-			IHost webHost = CreateHostBuilder(args).Build();
-			await webHost.RunAsync();
+			using var jsonStream = File.OpenRead("D:\\Entwicklung\\tmp\\verbrauch.json");
+			var test = await GemeindeVerbrauchParser.ParseJson(jsonStream);
+
+			//IHost webHost = CreateHostBuilder(args).Build();
+			//await webHost.RunAsync();
 		}
 
 

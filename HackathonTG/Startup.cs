@@ -32,9 +32,6 @@ namespace pebe.Dashboard
 
 			// ViewModels
 			HackathonTG.OpenGovernmentData.Core.Startup.ConfigureViewModels(services);
-
-			// Jobs
-			HackathonTG.OpenGovernmentData.Core.Startup.ConfigureJobs(services);
 		}
 
 		public void Configure(IApplicationBuilder app)
