@@ -2,10 +2,24 @@
 
 <PageTitle>Hackathon TG - Open Government Data</PageTitle>
 
-<div class="page">
-	<main>
-		<article class="content px-4 pb-4">
-			@Body
-		</article>
-	</main>
+<noscript>
+	<div class="fixed-bottom ma-5 alert alert-danger" role="alert">
+		<h4>JavaScript wurde deaktiviert - Beachte das somit die Seite eventuell nicht funktional ist</h4>
+	</div>
+</noscript>
+
+<div>
+	<MudThemeProvider />
+	<MudDialogProvider />
+	<MudSnackbarProvider />
 </div>
+
+<MudLayout>
+	<MudAppBar>
+		My Application
+	</MudAppBar>
+
+	<MudMainContent Class="px-5">
+		@Body
+	</MudMainContent>
+</MudLayout>
