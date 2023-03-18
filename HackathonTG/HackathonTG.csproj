@@ -12,6 +12,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HackathonTG.Common\HackathonTG.Common.csproj" />
+    <ProjectReference Include="..\OpenGovernmentData\HackathonTG.OpenGovernmentData.Core\HackathonTG.OpenGovernmentData.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="MudBlazor" />
   </ItemGroup>
 
