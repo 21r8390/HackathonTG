@@ -12,6 +12,9 @@ namespace HackathonTG.OpenGovernmentData.Core
 		{
 			services.AddHttpClient().AddHttpClient(ApiService.HTTP_CLIENT_NAME);
 
+			var ogdSection = configuration.GetSection("OpenGovernmentData");
+			ApiService.LOCAL_JSON = ogdSection["localJson"];
+
 			services.AddSingleton<IApiService, ApiService>();
 		}
 

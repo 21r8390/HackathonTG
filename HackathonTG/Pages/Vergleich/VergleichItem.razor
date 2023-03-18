@@ -1,0 +1,13 @@
+﻿@using HackathonTG.OpenGovernmentData.Core.Models;
+
+<div>
+	<MudAutocomplete T="GemeindeVerbrauch" Label="Gemeinden"
+					 @bind-Value="@GemeindeVerbrauch"
+					 SearchFunc="@(async (s) => await SucheGemeinde(s))"
+					 ResetValueOnEmptyText="true" />
+
+	@if(GemeindeVerbrauch is not null)
+	{
+		<p>@GemeindeVerbrauch.Name</p>
+	}
+</div>

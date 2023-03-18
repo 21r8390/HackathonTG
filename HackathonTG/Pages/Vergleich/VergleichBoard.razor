@@ -1,0 +1,14 @@
+﻿@page "/vergleich"
+
+<MudSelect T="DateTime" Label="Jahr" AnchorOrigin="Origin.BottomCenter" ValueChanged="@((jahr) => GemeindeVerbrauchViewModel.LadeSuchListe(jahr))" >
+	@foreach (var jahr in GemeindeVerbrauchViewModel.Jahre)
+	{
+		<MudSelectItem Value="jahr">@jahr.Year.ToString()</MudSelectItem>
+	}
+</MudSelect>
+
+<div class="d-flex justify-content-around">
+	<VergleichItem SuchListe="@GemeindeVerbrauchViewModel.SuchListe" />
+
+	<VergleichItem SuchListe="@GemeindeVerbrauchViewModel.SuchListe" />
+</div>

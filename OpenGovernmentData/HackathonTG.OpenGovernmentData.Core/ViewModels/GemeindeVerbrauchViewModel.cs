@@ -34,7 +34,7 @@ namespace HackathonTG.OpenGovernmentData.Core.ViewModels
 			Jahre = gemeindeVerbrauch.Select(g => g.Jahr).Distinct().OrderBy(j => j.Year).ToArray();
 		}
 
-		private void LadeSuchListe(DateTime jahr)
+		public void LadeSuchListe(DateTime jahr)
 		{
 			SuchListe = gemeindeVerbrauch.Where(g => g.Jahr == jahr)
 				.ToDictionary(g => g.Name);

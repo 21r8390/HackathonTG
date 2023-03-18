@@ -20,5 +20,10 @@
 		public double SolarWaerme { get; init; }
 
 		public double SonstigeEnergie { get; init; }
+
+		public override string ToString()
+		{
+			return Name;
+		}
 	}
 }
