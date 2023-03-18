@@ -7,11 +7,8 @@ namespace HackathonTG
 	{
 		public static async Task Main(string[] args)
 		{
-			using var jsonStream = File.OpenRead("D:\\Entwicklung\\tmp\\verbrauch.json");
-			var test = await GemeindeVerbrauchParser.ParseJson(jsonStream);
-
-			//IHost webHost = CreateHostBuilder(args).Build();
-			//await webHost.RunAsync();
+			IHost webHost = CreateHostBuilder(args).Build();
+			await webHost.RunAsync();
 		}
 
 

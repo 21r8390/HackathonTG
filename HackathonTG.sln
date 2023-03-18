@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonTG", "HackathonTG\HackathonTG.csproj", "{85387ED0-214C-4530-9121-8BF912CF87FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackathonTG", "HackathonTG\HackathonTG.csproj", "{85387ED0-214C-4530-9121-8BF912CF87FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonTG.OpenGovernmentData.Core", "OpenGovernmentData\HackathonTG.OpenGovernmentData.Core\HackathonTG.OpenGovernmentData.Core.csproj", "{23383B56-9EE9-4CAB-A6E2-DDB2E5A72068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackathonTG.OpenGovernmentData.Core", "OpenGovernmentData\HackathonTG.OpenGovernmentData.Core\HackathonTG.OpenGovernmentData.Core.csproj", "{23383B56-9EE9-4CAB-A6E2-DDB2E5A72068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonTG.Common", "HackathonTG.Common\HackathonTG.Common.csproj", "{AE8E593E-6975-4EAA-8DE1-2B166D926687}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackathonTG.Common", "HackathonTG.Common\HackathonTG.Common.csproj", "{AE8E593E-6975-4EAA-8DE1-2B166D926687}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
